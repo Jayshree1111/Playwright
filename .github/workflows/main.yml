@@ -48,7 +48,7 @@ jobs:
 
         PLAYWRIGHT_SERVICE_URL: ${{ vars.PLAYWRIGHT_SERVICE_URL }}
 
-      run: npx playwright test --config=playwright.service.config.js --workers=1
+      run: npx playwright test --config=playwright.service.config.js --workers=5
 
     - uses: actions/upload-artifact@v4
 
