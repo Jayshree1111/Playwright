@@ -33,7 +33,7 @@ const {test, expect} = require('@playwright/test');
    expect(orderId.includes(await ordersHistoryPage.getOrderId())).toBeTruthy();
 
  });
- test.only(`Client App login2'${data.productName}`,async ({page})=>
+ test(`Client App login2'${data.productName}`,async ({page})=>
  {
    const poManager = new POManager(page);
    

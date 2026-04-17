@@ -1,7 +1,7 @@
 const {test ,expect }=require('@playwright/test');
 const { getMaxListeners } = require('cluster');
 const { text } = require('node:stream/consumers');
-test('@web Login test' ,async ({page}) =>{
+test.only('@web Login test' ,async ({page}) =>{
     const productName = 'ZARA COAT 3';
     const email =  "panchanijayshree1@gmail.com";
 
